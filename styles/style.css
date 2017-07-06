@@ -8,11 +8,15 @@ header, section, footer, aside, nav, main, article, figure {
 
 /* Navbar */
 .navbar {
+	position: fixed;
+	width: 100%;
+	z-index: 1;
 	height: 50px;
 	background-color: black;
 	opacity: 0.75;
 	border: none;
 	border-radius: 0;
+	margin-bottom: 0;
 
 }
 .nav {
@@ -42,5 +46,61 @@ header, section, footer, aside, nav, main, article, figure {
 }	
 .navbar-default .navbar-nav > li > a:hover {
 	color: #009BED;
+}
+
+
+/* Header */
+header {
+	color: white;
+
+}
+.imgBackground {
+	max-height: 900px;
+
+}
+header > h2 {
+	position: absolute;
+	top: 80px;
+	line-height: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 23%;
+
+}
+header > h3 {
+	position: absolute;
+	top: 130px;
+	line-height: 32px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 36%;
+
+}
+.t-recs {
+	position: absolute;
+	top: 162px;
+	left: 40%;
+	height: 70%;
+
+
+	/*
+	display: block;
+    margin: auto;
+    width: 40%;
+	*/
+}
+
+@media screen and (max-height: 900px) {
+    .imgBackground {
+    	height: 100%;
+    	width: auto;
+    }
+    .t-recs {
+		position: absolute;
+		top: 162px;
+		left: 40%;
+		height: 70%;
+
+	}
 }
 
