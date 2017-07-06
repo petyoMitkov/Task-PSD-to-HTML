@@ -1,0 +1,46 @@
+/* Global Styles */
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+
+/* Navbar */
+.navbar {
+	height: 50px;
+	background-color: black;
+	opacity: 0.75;
+	border: none;
+	border-radius: 0;
+
+}
+.nav {
+	margin-left: 26%;
+	text-align: center;
+}
+.nav > li {
+	margin-left: 31px;
+	margin-right: 31px;
+	background-color: black;
+}
+.nav > li > a {
+	padding: 15px 0;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+	background-color: black;
+	color: white;
+	height: 50px;
+	border-bottom: 3px solid #009BED;
+	font-weight: bold;
+}
+.navbar-default .navbar-nav > li > a {
+	color: white;
+}	
+.navbar-default .navbar-nav > li > a:hover {
+	color: #009BED;
+}
+
