@@ -9,7 +9,7 @@ header, section, footer, aside, nav, main, article, figure {
 /* Navbar */
 .navbar {
 	position: fixed;
-	width: 100%;
+	width: 100%;	
 	z-index: 1;
 	height: 50px;
 	background-color: black;
@@ -17,7 +17,6 @@ header, section, footer, aside, nav, main, article, figure {
 	border: none;
 	border-radius: 0;
 	margin-bottom: 0;
-
 }
 .nav {
 	margin-left: 26%;
@@ -31,7 +30,6 @@ header, section, footer, aside, nav, main, article, figure {
 .nav > li > a {
 	padding: 15px 0;
 }
-
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
@@ -48,59 +46,77 @@ header, section, footer, aside, nav, main, article, figure {
 	color: #009BED;
 }
 
-
 /* Header */
 header {
 	color: white;
-
+	position: relative;
 }
 .imgBackground {
 	max-height: 900px;
 
 }
-header > h2 {
+header > h1 {
 	position: absolute;
 	top: 80px;
-	line-height: 20px;
 	margin-top: 0;
 	margin-bottom: 0;
-	margin-left: 23%;
-
+	left: 24%;
+	line-height: 19.9px;	
+	font-size: 26px;
+	z-index: 2;
+	font-style: oblique;
 }
-header > h3 {
+header > h2 {
 	position: absolute;
-	top: 130px;
-	line-height: 32px;
+	top: 135px;
+	left: 36%;
+	line-height: 16px;
 	margin-top: 0;
 	margin-bottom: 0;
-	margin-left: 36%;
-
+	font-size: 21.5px;
+	z-index: 5;
+	
 }
-.t-recs {
+.t-recs { 
 	position: absolute;
-	top: 162px;
-	left: 40%;
-	height: 70%;
+	top: 196.5px;
+	left: 35%;
+	height: 61%;
+	padding-bottom: 52px;
 
+	max-width: 28%;
+	
+	border: 1px solid blue;	
+}
+.btnContainer {
+	position: absolute;
+	top: 80%;
+	background-color:white;	
+	opacity: 0.25;
+	width: 100%;	
+	height: 170px;
+	overflow: hidden;
+}
+.red {
+	width: 50%;
+	background-color: red;
+	position: fixed;
+	top: 50px;
 
-	/*
-	display: block;
-    margin: auto;
-    width: 40%;
-	*/
+	height: 25px;
 }
 
-@media screen and (max-height: 900px) {
-    .imgBackground {
-    	height: 100%;
-    	width: auto;
+@media (max-height: 900px) {
+    /*.imgBackground {
+    	height: 50vh;
+    	width: 50vw;
+    }*/
+	
+	.imgBackground {
+    	height: 100vh;
+    	width: 100vw;
     }
-    .t-recs {
-		position: absolute;
-		top: 162px;
-		left: 40%;
-		height: 70%;
-
-	}
+    
+	
 }
 
