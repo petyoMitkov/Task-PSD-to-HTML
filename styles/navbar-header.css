@@ -13,7 +13,6 @@ header, section, footer, aside, nav, main, article, figure {
 	z-index: 1;
 	height: 50px;
 	background-color: rgba(0,0,0, 0.75);
-	/*opacity: 0.75;*/
 	border: none;
 	border-radius: 0;
 	margin-bottom: 0;
@@ -22,29 +21,38 @@ header, section, footer, aside, nav, main, article, figure {
 	margin-left: 26%;
 	text-align: center;
 }
-.nav > li {
-	margin-left: 31px;
-	margin-right: 31px;
-}
 .nav > li > a {
 	padding: 15px 0;
+	padding-left: 31px;
+	padding-right: 31px;
 } 
+.hrNav {
+	position: absolute;
+	top: 47px;
+	margin: 0;
+	padding-left: 40%;
+	z-index: 20;
+	border: 1.5px solid #009BED;
+}
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
 	background-color: rgba(0,0,0, 0);
 	color: white;
 	height: 50px;
-	border-bottom: 3px solid #009BED;
-	font-weight: bold;
+	font-weight: bold;	
 }
 .navbar-default .navbar-nav > li > a {
 	color: white;
 }	
 .navbar-default .navbar-nav > li > a:hover {
-	color: rgba(0,155,237, 1);
+	color: rgba(0,0,0, 1);
+	background-color: rgba(255,255,255, 1);
 }
-
+.navbar-default .navbar-nav > .active > a:hover {
+	color: rgba(0,0,0, 1);
+	background-color: rgba(255,255,255, 1);
+}
 
 /* Header */
 header {
@@ -53,8 +61,7 @@ header {
 	text-shadow: 0px 0px 5px grey;
 }
 .imgBackground {
-	max-height: 900px;
-
+	height: 900px;
 }
 header > h1 {
 	position: absolute;
@@ -65,7 +72,6 @@ header > h1 {
 	line-height: 19.9px;	
 	font-size: 26px;
 	z-index: 2;
-	font-style: oblique;
 }
 header > h2 {
 	position: absolute;
@@ -76,34 +82,29 @@ header > h2 {
 	margin-bottom: 0;
 	font-size: 21.5px;
 	z-index: 5;
-	
 }
 .t-recs { 
 	position: absolute;
-	top: 195px; /*196.5*/
-	left: 34%;
-	height: 56.3%;
-	padding-bottom: 58px;
-	max-width: 35%;	
-
+	top: 196.5px;;
+	left: 33.5%;
+	height: 52.833%;
+	width: 33%;	
 }
 .btnContainer {
 	position: absolute;
-	top: 80%;
+	top: 81.111%;
 	background-color: rgba(255,255,255, 0.25);
 	width: 100%;	
-	height: 170px;
+	height: 18.888%;
 	color: red;
 	text-align: center;
-	
-	/*overflow: hidden;*/
 }
 .headerBtn {
 	width: 208px;
 	height: 49px;
 	background-color: #01BAD6;
 	box-shadow: 0px 2px 5px #35343C;
-	margin: 4% 20px 4% 20px;
+	margin: 60.5px 20px 60.5px 20px;
 	border-radius: 5px;	
 	border: none;
 }
@@ -121,36 +122,76 @@ header > h2 {
 .btn-primary:focus {
 	background-color: #006e7f;
     outline: none;
-	font-weight: normal;
-	
-}
-/*
-.btn-primary:target {
-    color: #fff;
-    background-color: yellow;
-    outline: none;
-}*/
-
-
-.red {
-	width: 50%;
-	background-color: red;
-	position: fixed;
-	top: 50px;
-	height: 25px;
+	font-weight: normal;	
 }
 
+/*PC styles*/
 @media (max-height: 900px) {
-    /*.imgBackground {
-    	height: 50vh;
-    	width: 50vw;
-    }*/
-	
 	.imgBackground {
     	height: 100vh;
     	width: 100vw;
-    }
-    
-	
+    }  
+}
+
+/*Tablet styles*/
+@media (max-height: 767px) {
+	.nav  {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		background-color: rgba(0,0,0, 0.75);
+	} 
+	.navbar-default .navbar-toggle:focus, 
+	.navbar-default .navbar-toggle:hover {
+		background-color: rgba(0,0,0, 0);
+	}
+	li {
+		text-align: center;
+	}
+	.hrNav {
+		margin: 0;
+		left: 0;
+		padding-left: 100%;
+	}
+	.navbar-collapse {		
+		padding: 0;
+		z-index: 1;
+	}
+	.navbar-default .navbar-nav > .active > a:hover {
+		color: white;
+		background-color: rgba(0,0,0, 0);
+	}
+    header > h1 {
+		position: absolute;
+		top: 10%;
+		left: 15%;	
+		font-size: 22px;
+		z-index: 0;
+	}
+	header > h2 {
+		position: absolute;
+		top: 18%;
+		left: 15%;
+		font-size: 16px;
+		z-index: 0;
+	}
+ 	.t-recs { 
+		position: absolute;
+		top: 24%;
+		left: 15%;
+		height: 54%;
+		width: 70%;	
+	}
+	.headerBtn {
+		width: 150px;
+		height: 49px;
+		margin: 10% 10px 3% 10px;
+	}
+}
+
+ /*phone styles*/
+@media  (max-height: 479px) {
+
+
 }
 
