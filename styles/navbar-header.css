@@ -134,12 +134,11 @@ header > h2 {
 }
 
 /*Tablet styles*/
-@media (max-height: 767px) {
+@media (max-height: 767px OR ), (max-width: 950px ) {
 	.nav  {
 		margin: 0;
 		padding: 0;
-		width: 100%;
-		background-color: rgba(0,0,0, 0.75);
+		background-color: rgba(0,0,0, 0.9);	
 	} 
 	.navbar-default .navbar-toggle:focus, 
 	.navbar-default .navbar-toggle:hover {
@@ -178,20 +177,74 @@ header > h2 {
  	.t-recs { 
 		position: absolute;
 		top: 24%;
-		left: 15%;
-		height: 54%;
-		width: 70%;	
+		left: 35%;
+		height: 50%;
+		width: 40%;	
 	}
 	.headerBtn {
 		width: 150px;
 		height: 49px;
-		margin: 10% 10px 3% 10px;
+		margin: 5% 10px 1% 10px;
 	}
 }
 
  /*phone styles*/
 @media  (max-height: 479px) {
+	header > h1 {
+		position: absolute;
+		top: 15%;
+		left: 15%;	
+		font-size: 18px;
+		z-index: 0;
+	}
+	header > h2 {
+		position: absolute;
+		top: 20%;
+		left: 33%;
+		font-size: 14px;
+		z-index: 0;
+	}
+	.t-recs { 
+		position: absolute;
+		top: 32%;
+		left: 35%;
+		height: 45%;
+		width: 30%;	
+	}
+	.headerBtn {
+		width: 150px;
+		height: 49px;
+		margin: 1% 10px 0% 10px;
+	}
+	@media  (max-height: 200px) {
+		.imgBackground {
+			height: 300vh;
+			width: 100vw;
+		}  
+	}
+}
 
-
+@media  (max-width: 320px) {
+	.headerBtn {
+		width: 120px;
+		height: 49px;
+		margin: 5% 10px 0% 10px;
+	}
+}
+@media  (max-width: 414px) {
+	.t-recs { 
+		position: absolute;
+		top: 25%;
+		left: 22%;
+		height: 54%;
+		width: 60%;	
+	}
+}
+@media  (max-width: 960px) and (min-width: 768px) {
+	.nav  {
+		margin-left: 18%;
+		padding: 0;
+		background-color: rgba(0,0,0, 0);	
+	} 
 }
 
