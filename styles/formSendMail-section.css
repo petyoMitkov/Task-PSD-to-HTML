@@ -16,12 +16,14 @@
 .select {
     margin-bottom: 30px;
 }
+/*
 select > option {
     margin: 20px 0 20px 15px;
-    line-height: 5em;
-    font-size: 2em;
+    line-height: 2em;
+    font-size: 1em;
     color: red;
 }
+*/
 textarea.form-control {
     padding-top: 15px;
     min-height: 150px;
@@ -35,6 +37,20 @@ textarea.form-control {
 	background-color: #01BAD6;
 	border-radius: 5px;	
 	border: none;
+}
+
+/*Responsive styles*/
+@media (max-width: 1020px) {
+    .inlineBlock {
+        display: block;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .divSelect, .divTextarea {
+        width: 50%;
+        margin: auto;
+    }
 }
 
 

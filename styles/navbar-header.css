@@ -123,16 +123,34 @@ header > h2 {
 	font-weight: normal;	
 }
 
-/*PC styles*/
+/*PC styles* 1280x1024*/
 @media (max-height: 900px) {
 	.imgBackground {
     	height: 100vh;
     	width: 100vw;
-    }  
+    }  	
+}
+
+/*Large screen 1440x900, 1680x1050, 1920x1200*/
+@media (min-height: 1025px) {
+	.imgBackground {
+		width: 100%;
+		margin: auto; 
+	}
+}
+@media (min-height: 1367px)  {
+	.imgBackground {
+		width: 60vw; /*60%*/
+		margin: auto;
+	}
+	.t-recs { 
+		left: 40.5%;
+		width: 15%;	
+	}
 }
 
 /*Tablet styles*/
-@media (max-height: 767px OR ), (max-width: 950px ) {
+@media (max-height: 767px), (max-width: 950px ) {
 	.nav  {
 		margin: 0;
 		padding: 0;
@@ -186,7 +204,7 @@ header > h2 {
 	}
 }
 
- /*phone styles*/
+ /*Phone styles*/
 @media  (max-height: 479px) {
 	header > h1 {
 		position: absolute;
@@ -221,7 +239,6 @@ header > h2 {
 		}  
 	}
 }
-
 @media  (max-width: 320px) {
 	.headerBtn {
 		width: 120px;
