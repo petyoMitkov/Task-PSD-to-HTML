@@ -1,0 +1,21 @@
+.footer {
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 4%;
+}
+small {
+    color: black;
+    font-weight: bold;
+} 
+.socialLinks {
+    margin-left: auto;
+    float: right;
+    margin: auto;
+}
+.socialLinks > a {
+    text-decoration: none;
+}
+.socialLinks > a > .img-responsive {
+     display: inline;
+     margin-left: 7px; 
+}

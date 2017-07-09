@@ -1,0 +1,40 @@
+.formSendMail {
+    width: 1000px;
+    margin: auto;
+}
+.inlineBlock {
+    display: inline-block;
+    width: 478px;
+    margin-bottom: 30px;
+}
+.firstBlock {
+    margin-right: 40px;
+}
+.input, .select {
+    height: 50px;
+}
+.select {
+    margin-bottom: 30px;
+}
+select > option {
+    margin: 20px 0 20px 15px;
+    line-height: 5em;
+    font-size: 2em;
+    color: red;
+}
+textarea.form-control {
+    padding-top: 15px;
+    min-height: 150px;
+    margin-bottom: 30px;
+}
+.submitBtn {
+    width: 20%;
+    margin: 0 40%;
+    width: 208px;
+	height: 49px;
+	background-color: #01BAD6;
+	border-radius: 5px;	
+	border: none;
+}
+
+

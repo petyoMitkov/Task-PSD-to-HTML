@@ -1,0 +1,49 @@
+.info {
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+}
+.row {
+    margin: 0;
+    padding: 0;
+}
+.infoMainText {
+    padding: 6% 0 6% 0;
+    width: 1000px;  
+}
+.infoMainText > h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+    font-weight: 600;
+}
+.infoText {
+    display: inline-block;
+    padding: 0;
+    font-size: 1.1em;
+    line-height: 1.8em;
+    font-weight: bolder;
+    width: 480px;
+    height: 100%;
+}
+.infoDinoPic {
+    padding: 0;
+    display: inline-block;
+    width: 480px;
+    height: 100px;
+}
+.dinoPic {  
+    width: 120%;
+    -ms-transform: scale(1.05, 1.2) translate(-10px, 15px); /* IE 9 */
+    -webkit-transform: scale(1.05, 1.2) translate(-10px, 15px); /* Safari */
+    transform: scale(1.05, 1.3) translate(-10px, 15px);
+}
+.offset {
+    display: inline-block;
+    width: 37px;
+    height: 222px;
+}
+.line {
+    margin: 4% 0 4% 0;
+    border: 1px solid #D8D8D8;
+}

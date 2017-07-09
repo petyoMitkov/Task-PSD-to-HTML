@@ -17,7 +17,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <!--CSS navbar-header.css-->            
-  <link rel="stylesheet" type="text/css" href="styles/navbar-header.css">
+  <link rel="stylesheet" type="text/css" href="styles/navbar-header.css">  
+  <!--CSS info-section.css-->            
+  <link rel="stylesheet" type="text/css" href="styles/info-section.css"> 
+  <!--CSS formSendMail-section.css-->            
+  <link rel="stylesheet" type="text/css" href="styles/formSendMail-section.css">
+  <!--CSS footer.css-->            
+  <link rel="stylesheet" type="text/css" href="styles/footer.css">
+
   <!--JS File Local-->
   <script type="text/javascript" src="scripts/script.js"></script>
 
@@ -28,7 +35,7 @@
 <body>
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
+      <!-- Brand and toggle  -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -37,8 +44,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
-      </div>
-  
+      </div>  
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
@@ -47,28 +53,107 @@
           <li ><a href="#menu3">menu3</a></li>
           <li ><a href="#menu4">menu4</a></li>
         </ul>     
-      </div><!-- /.navbar-collapse -->
+      </div>
     </div>
   </nav>
 
-  <header>  
+  <header>      
     <img src="images/background.jpg" class="imgBackground img-responsive" alt="Image">
     <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
     <h2>Ut tempor dignissim sem ac tempus</h2>
     <img src="images/dude-1.png" class="t-recs img-responsive" alt="Image">
     <div class="btnContainer">   
-      <button type="button" class="headerBtn btn-primary">My Button1</button>
-      <button type="button" class="headerBtn btn-primary">My Button1</button>
+      <button type="button" class="headerBtn btn-primary">
+        My Button1
+      </button>
+      <button type="button" class="headerBtn btn-primary">
+        My Button2
+      </button>
     </div>
   </header>
 
-  <section>
-    
+  <section class="info">
+    <div class="row">      
+      <div class="infoMainText col-md-12"> <!--col-xs-12 col-sm-12 col-md-12 col-lg-12-->
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="infoText col-sm-5"> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor dignissim sem ac tempus. Donec egestas finibus ex, ut congue mi porttitor eu. Integer vehicula felis nec mi maximus, non ultrices arcu vestibulum. Sed id malesuada arcu, sed mattis nisl. Aliquam erat volutpat. Mauris efficitur tristique nulla. Suspendisse nec leo sapien. Denec iaculis, nunc eu feugiat efficitur, nisi magna porttitor due, vitae bibendum sem quam interdum tortor. In hac haditasse platea dictumst.</p>
+      </div>
+      <div class="offset col-sm-2"></div>
+      <div class="infoDinoPic col-sm-5"> 
+        <img src="./images/dude-2.png" class="dinoPic img-responsive" alt="Image">
+      </div>     
+    </div>            
   </section>
 
-  <section></section>
+  <div class="row">
+      <hr class="line">
+  </div>
 
-  <footer></footer>
+  <section class="formSendMail">    
+    <form action="" method="POST" role="form">    
+      <div class="form-group">
+        <div class="inlineBlock firstBlock"> 
+          <label for="">Your name*</label>
+          <input type="text" class="input form-control" id="" placeholder="Enter your name hare" required="required">
+        </div>
+        
+        <div class="inlineBlock"> 
+          <label for="">Your Email*</label>
+          <input type="text" class="input form-control" id="" placeholder="Enter your email hare" required="required">
+        </div>
+
+        <label for="">Reason*</label>
+        <select name="" id="input1/(\w+)/\u\1/g" class="select form-control" required="required">
+          <option selected hidden disabled>Please select an option</option>
+          <option>I have dino in mai garden</option>
+          <option>I am a dino</option>
+          <option>I want have a pet</option>
+        </select>   
+
+        <label for="">Your Massage*</label>     
+        <textarea name="" id="input1/(\w+)/\u\1/g" class="form-control" rows="3" required="required" placeholder="Enter your message here"></textarea>      
+      </div>
+
+    
+      <div>
+         <button type="submit" class="submitBtn btn btn-primary" title="Click to send message">Send your message</button>
+      </div>
+    
+     
+    </form>
+    
+
+  </section>
+  
+  <div class="row">
+      <hr class="line">
+  </div>
+
+  <footer class="footer">
+    <div class="row">
+      <small>
+          2017 &copy; Lorem ipsum dolor sit amet 
+      </small>
+      <div class="socialLinks">        
+        <a href="#">
+          <img src="./images/fb.png" class="img-responsive" title="Go to Facebook" alt="Facebook">
+        </a>
+        <a href="#">          
+          <img src="./images/tw.png" class="img-responsive" title="Go to Twitter" alt="Twitter">  
+        </a>
+        <a href="#">          
+          <img src="./images/in.png" class="img-responsive" title="Go to LinkedIn" alt="LinkedIn">
+        </a>
+        <a href="#">          
+           <img src="./images/gp.png" class="img-responsive" title="Go to Google Plus" alt="Google+">
+        </a>        
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
