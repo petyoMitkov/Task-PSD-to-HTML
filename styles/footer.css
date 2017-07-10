@@ -46,11 +46,11 @@ small {
 @media (max-width: 480px) {
     small {
         display: block;
-        padding-left: 16%;
+        padding-left: 21%;
     }
     .socialLinks {
         position: absolute;
-        left: 26%;
+        left: 30%;
         transform: translateY(-80px);
     }
 }

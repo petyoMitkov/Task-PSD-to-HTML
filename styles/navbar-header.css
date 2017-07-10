@@ -209,7 +209,7 @@ header > h2 {
 	}
 }
  /*Phone styles*/
-@media  (max-height: 478px) {
+@media screen and (max-height: 478px) {
 	header > h1 {
 		position: absolute;
 		top: 16%;
@@ -233,8 +233,8 @@ header > h2 {
 		width: 25%;	
 	}
 	.headerBtn {
-		width: 150px;
-		height: 49px;
+		width: 25%;
+		height: 60%;
 		margin: 1% 10px 0% 10px;
 	}	
 }
@@ -252,18 +252,19 @@ header > h2 {
 		margin: 5% 10px 0% 10px;
 	}	
 }
-@media  (max-width: 414px) {
+@media   (max-width: 414px) {
 	.t-recs { 
 		position: absolute;
-		top: 25%;
-		left: 22%;
-		height: 54%;
-		width: 60%;	
+		top: 35%;
+		left: 25%;
+		height: 40%;
+		width: 50%;	
 	}
 	header > h1 {
 		position: absolute;
 		top: 11%;
-		left: 5%;	
+		left: 5%;
+		line-height: 22px;	
 		font-size: 22px;
 		z-index: 0;
 		color: green;

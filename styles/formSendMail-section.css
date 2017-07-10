@@ -13,20 +13,14 @@
 .input, .select {
     height: 50px;
 }
-.select {
+.divSelect {
     margin-bottom: 30px;
 }
-/*
-select > option {
-    margin: 20px 0 20px 15px;
-    line-height: 2em;
-    font-size: 1em;
-    color: red;
-}
-*/
-textarea.form-control {
+textarea {
     padding-top: 15px;
     min-height: 150px;
+}
+.divTextarea {
     margin-bottom: 30px;
 }
 .submitBtn {
@@ -41,6 +35,13 @@ textarea.form-control {
 .asterisk {
     color: #01BAD6;
 }
+/* Validation stiles */
+.error {
+    color: red;
+}
+.valid {
+    color: green;
+}
 
 /*Responsive styles*/
 @media (max-width: 1020px) {
@@ -49,13 +50,13 @@ textarea.form-control {
     }
     .inlineBlock {
         display: block;
-        width: 80%;
-        margin-left: 10%;
+        width: 90%;
+        margin-left: 5%;
         margin-bottom: 30px;
     }
     .divSelect, .divTextarea {
-        width: 80%;
-        margin-left: 10%;
+        width: 90%;
+        margin-left: 5%;
     }
     .submitBtnHolder {
         display: inline-block;

@@ -25,6 +25,10 @@
   <!--CSS footer.css-->            
   <link rel="stylesheet" type="text/css" href="styles/footer.css">
 
+  <!--jQuery Validation-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+  <script src="scripts/form-validation.js"></script>
+
   <!--JS File Local-->
   <script type="text/javascript" src="scripts/script.js"></script>
 
@@ -94,21 +98,21 @@
   </div>
 
   <section class="formSendMail">    
-    <form action="" method="POST" role="form">    
+    <form action="" name="form" id="form" method="POST" role="form">    
       <div class="form-group">
-        <div class="inlineBlock firstBlock"> 
-          <label for="">Your name<span class="asterisk"> *</span></label>
-          <input type="text" class="input form-control" id="" placeholder="Enter your name hare" required="required">
+        <div class="inlineBlock firstBlock control-label"> 
+          <label for="name1">Your name<span class="asterisk"> *</span></label>
+          <input type="text" class="input form-control controls" name="name1" id="name1" placeholder="Enter your name hare">
         </div>
         
         <div class="inlineBlock"> 
-          <label for="">Your Email<span class="asterisk"> *</span></label>
-          <input type="text" class="input form-control" id="" placeholder="Enter your email hare" required="required">
+          <label for="email">Your Email<span class="asterisk"> *</span></label>
+          <input type="email" class="input form-control" name="email" id="email" placeholder="Enter your email hare">
         </div>
 
         <div class="divSelect">
-          <label for="">Reason<span class="asterisk"> *</span></label>
-          <select name="" id="input1/(\w+)/\u\1/g" class="select form-control" required="required">
+          <label for="reason">Reason<span class="asterisk"> *</span></label>
+          <select name="reason" id="reason" class="select form-control">
             <option selected hidden disabled>Please select an option</option>
             <option>I have dinosaur in my garden</option>
             <option>I am a dinosaur</option>
@@ -119,8 +123,8 @@
         </div>
 
         <div class="divTextarea">
-          <label for="">Your Massage:<span class="asterisk"> *</span></label>     
-          <textarea name="" id="input1/(\w+)/\u\1/g" class="form-control" rows="3" required="required" placeholder="Enter your message here"></textarea>      
+          <label for="message">Your Massage:<span class="asterisk"> *</span></label>     
+          <textarea name="message" id="message" class="form-control" rows="3" placeholder="Enter your message here" required="required"></textarea>      
         </div>
       </div>
     
