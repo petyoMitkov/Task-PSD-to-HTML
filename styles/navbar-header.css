@@ -94,7 +94,6 @@ header > h2 {
 	background-color: rgba(255,255,255, 0.25);
 	width: 100%;	
 	height: 18.888%;
-	color: red;
 	text-align: center;
 }
 .headerBtn {
@@ -128,15 +127,17 @@ header > h2 {
 	.imgBackground {
     	height: 100vh;
     	width: 100vw;
-    }  	
+    }  
 }
-
 /*Large screen 1440x900, 1680x1050, 1920x1200*/
-@media (min-height: 1025px) {
+@media (min-height: 1024px) {
 	.imgBackground {
 		width: 100%;
 		margin: auto; 
 	}
+	.nav {
+		margin-left: 20%;
+	}	
 }
 @media (min-height: 1367px)  {
 	.imgBackground {
@@ -148,9 +149,8 @@ header > h2 {
 		width: 15%;	
 	}
 }
-
 /*Tablet styles*/
-@media (max-height: 767px), (max-width: 950px ) {
+@media (max-height: 767px) {
 	.nav  {
 		margin: 0;
 		padding: 0;
@@ -178,24 +178,29 @@ header > h2 {
 	}
     header > h1 {
 		position: absolute;
-		top: 10%;
-		left: 15%;	
-		font-size: 22px;
-		z-index: 0;
+		top: 80px;
+		margin-top: 0;
+		margin-bottom: 0;
+		left: 24%;
+		line-height: 19.9px;	
+		font-size: 26px;	
+		color: blue;
 	}
 	header > h2 {
 		position: absolute;
-		top: 18%;
-		left: 15%;
-		font-size: 16px;
-		z-index: 0;
+		top: 135px;
+		left: 36%;
+		line-height: 16px;
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 21.5px;
 	}
  	.t-recs { 
 		position: absolute;
-		top: 24%;
+		top: 28%;
 		left: 35%;
 		height: 50%;
-		width: 40%;	
+		width: 30%;	
 	}
 	.headerBtn {
 		width: 150px;
@@ -203,20 +208,20 @@ header > h2 {
 		margin: 5% 10px 1% 10px;
 	}
 }
-
  /*Phone styles*/
-@media  (max-height: 479px) {
+@media  (max-height: 478px) {
 	header > h1 {
 		position: absolute;
-		top: 15%;
-		left: 15%;	
-		font-size: 18px;
+		top: 16%;
+		left: 5%;	
+		font-size: 17px;
 		z-index: 0;
+		color: red;
 	}
 	header > h2 {
 		position: absolute;
-		top: 20%;
-		left: 33%;
+		top: 23%;
+		left: 5%;
 		font-size: 14px;
 		z-index: 0;
 	}
@@ -225,26 +230,27 @@ header > h2 {
 		top: 32%;
 		left: 35%;
 		height: 45%;
-		width: 30%;	
+		width: 25%;	
 	}
 	.headerBtn {
 		width: 150px;
 		height: 49px;
 		margin: 1% 10px 0% 10px;
-	}
-	@media  (max-height: 200px) {
-		.imgBackground {
-			height: 300vh;
-			width: 100vw;
-		}  
-	}
+	}	
 }
-@media  (max-width: 320px) {
+/*Nexus 5X with keyboard*/
+@media  (max-height: 200px) {
+	.imgBackground {
+		height: 300vh;
+		width: 100vw;
+	}  
+}
+@media  (max-width: 350px) {
 	.headerBtn {
 		width: 120px;
 		height: 49px;
 		margin: 5% 10px 0% 10px;
-	}
+	}	
 }
 @media  (max-width: 414px) {
 	.t-recs { 
@@ -254,12 +260,62 @@ header > h2 {
 		height: 54%;
 		width: 60%;	
 	}
+	header > h1 {
+		position: absolute;
+		top: 11%;
+		left: 5%;	
+		font-size: 22px;
+		z-index: 0;
+		color: green;
+	}
+	header > h2 {
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		font-size: 14px;
+		z-index: 0;
+	}
 }
-@media  (max-width: 960px) and (min-width: 768px) {
-	.nav  {
-		margin-left: 18%;
+@media  (min-width: 960px) {
+	.nav  {		
 		padding: 0;
-		background-color: rgba(0,0,0, 0);	
-	} 
+		margin-left: 20%;
+		background-color: rgba(0,0,0, 0);
+	}
 }
+@media  (min-width: 1280px) {
+	.nav  {		
+		padding: 0;
+		margin-left: 26.5%;
+		background-color: rgba(0,0,0, 0);
+	} 	
+}
+@media  (min-width: 1360px) {
+	.nav  {		
+		padding: 0;
+		margin-left: 27.5%;
+		background-color: rgba(0,0,0, 0);
+	}
+	.headerBtn {
+		width: 209px;
+		height: 49px;
+		margin: 3% 10px;
+		background-color: red;
+	} 
+	.hrNav {
+		margin-left: 28%;
+		padding-left: 43%;
+	}
+}
+@media  (min-width: 1440px) {
+	.hrNav {
+		position: absolute;
+		top: 47px;
+		margin: 0;
+		padding-left: 40%;
+		z-index: 20;
+		border: 1.5px solid #009BED;
+	}
+}
+
 

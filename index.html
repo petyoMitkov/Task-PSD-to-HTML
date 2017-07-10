@@ -97,17 +97,17 @@
     <form action="" method="POST" role="form">    
       <div class="form-group">
         <div class="inlineBlock firstBlock"> 
-          <label for="">Your name*</label>
+          <label for="">Your name<span class="asterisk"> *</span></label>
           <input type="text" class="input form-control" id="" placeholder="Enter your name hare" required="required">
         </div>
         
         <div class="inlineBlock"> 
-          <label for="">Your Email*</label>
+          <label for="">Your Email<span class="asterisk"> *</span></label>
           <input type="text" class="input form-control" id="" placeholder="Enter your email hare" required="required">
         </div>
 
         <div class="divSelect">
-          <label for="">Reason*</label>
+          <label for="">Reason<span class="asterisk"> *</span></label>
           <select name="" id="input1/(\w+)/\u\1/g" class="select form-control" required="required">
             <option selected hidden disabled>Please select an option</option>
             <option>I have dinosaur in my garden</option>
@@ -119,20 +119,16 @@
         </div>
 
         <div class="divTextarea">
-          <label for="">Your Massage*</label>     
+          <label for="">Your Massage:<span class="asterisk"> *</span></label>     
           <textarea name="" id="input1/(\w+)/\u\1/g" class="form-control" rows="3" required="required" placeholder="Enter your message here"></textarea>      
         </div>
       </div>
-
     
-      <div>
+      <div class="submitBtnHolder">
          <button type="submit" class="submitBtn btn btn-primary" title="Click to send message">Send your message</button>
-      </div>
-    
+      </div>    
      
-    </form>
-    
-
+    </form>   
   </section>
   
   <div class="row">
