@@ -150,7 +150,7 @@ header > h2 {
 	}
 }
 /*Tablet styles*/
-@media (max-height: 767px) {
+@media (max-height: 768x) {
 	.nav  {
 		margin: 0;
 		padding: 0;
@@ -184,7 +184,6 @@ header > h2 {
 		left: 24%;
 		line-height: 19.9px;	
 		font-size: 26px;	
-		color: blue;
 	}
 	header > h2 {
 		position: absolute;
@@ -216,7 +215,6 @@ header > h2 {
 		left: 5%;	
 		font-size: 17px;
 		z-index: 0;
-		color: red;
 	}
 	header > h2 {
 		position: absolute;
@@ -245,14 +243,14 @@ header > h2 {
 		width: 100vw;
 	}  
 }
-@media  (max-width: 350px) {
+@media  screen and (max-width: 375px) {
 	.headerBtn {
 		width: 120px;
 		height: 49px;
 		margin: 5% 10px 0% 10px;
 	}	
 }
-@media   (max-width: 414px) {
+@media  screen and (max-width: 425px) {
 	.t-recs { 
 		position: absolute;
 		top: 35%;
@@ -267,7 +265,6 @@ header > h2 {
 		line-height: 22px;	
 		font-size: 22px;
 		z-index: 0;
-		color: green;
 	}
 	header > h2 {
 		position: absolute;
@@ -276,6 +273,29 @@ header > h2 {
 		font-size: 14px;
 		z-index: 0;
 	}
+}
+@media  screen and (max-width: 768px) {
+	header > h1 { 
+		left: 5%;
+	}
+	header > h2 {
+		left: 5%;
+	}
+	.headerBtn {
+		width: 120px;
+		height: 49px;
+		margin: 10% 10px 0% 10px;
+	}	
+}
+@media  screen and (max-height: 480px) {
+	.headerBtn {
+		width: 120px;
+		height: 49px;
+		margin: 1% 10px 0% 10px;
+	}	
+}
+@media  screen and (max-width: 768px) {
+	
 }
 @media  (min-width: 960px) {
 	.nav  {		
@@ -301,7 +321,6 @@ header > h2 {
 		width: 209px;
 		height: 49px;
 		margin: 3% 10px;
-		background-color: red;
 	} 
 	.hrNav {
 		margin-left: 28%;

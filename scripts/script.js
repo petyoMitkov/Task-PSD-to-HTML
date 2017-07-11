@@ -3,6 +3,18 @@ $(document).ready(function(){
 	$("li > a").first().append('<hr class="hrNav">');
 
     $("a").on("click", switchActive());
+
+    //Change header img src when screen < 480px
+    $(window).resize(changeSrc()); 
+	$(window).bind( 'orientationchange', changeSrc);
+	function changeSrc() {
+		if (screen.width < 480) {
+	    	$(".changeSrc").attr("src", "./images/background2.jpg");
+	    } else {
+	    	$(".changeSrc").attr("src", "./images/background.jpg ");
+	    }
+	}
+    
 	
     function switchActive() {
 		$(".nav > li > a").click(function() {
