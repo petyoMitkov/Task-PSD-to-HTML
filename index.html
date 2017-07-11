@@ -101,14 +101,16 @@
     <form action="" name="form" id="form" method="POST" role="form">    
       <div class="form-group">
         <div class="inlineBlock firstBlock control-label"> 
-          <label for="name1">Your name<span class="asterisk"> *</span></label>
-          <input type="text" class="input form-control controls" name="name1" id="name1" placeholder="Enter your name hare">
+          <label for="name">Your name<span class="asterisk"> *</span></label>
+          <input type="text" class="input form-control controls" name="name" id="name" placeholder="Enter your name hare">
+          <label for="error"></label>
         </div>
         
         <div class="inlineBlock"> 
           <label for="email">Your Email<span class="asterisk"> *</span></label>
           <input type="email" class="input form-control" name="email" id="email" placeholder="Enter your email hare">
-        </div>
+          <label for="error"></label>
+       </div>
 
         <div class="divSelect">
           <label for="reason">Reason<span class="asterisk"> *</span></label>
@@ -120,11 +122,13 @@
             <option>I work in Jurassic Park</option>
             <option>I saw Godzilla on the street</option>
           </select>   
+          <label for="error"> </label>
         </div>
 
         <div class="divTextarea">
           <label for="message">Your Massage:<span class="asterisk"> *</span></label>     
           <textarea name="message" id="message" class="form-control" rows="3" placeholder="Enter your message here" required="required"></textarea>      
+          <label for="error"> </label>
         </div>
       </div>
     

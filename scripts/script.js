@@ -1,21 +1,9 @@
-// Navbar: class Active and hr element
 $(document).ready(function(){
 	$("li > a").first().append('<hr class="hrNav">');
 
     $("a").on("click", switchActive());
 
-    //Change header img src when screen < 480px
-    $(window).resize(changeSrc()); 
-	$(window).bind( 'orientationchange', changeSrc);
-	function changeSrc() {
-		if (screen.width < 480) {
-	    	$(".changeSrc").attr("src", "./images/background2.jpg");
-	    } else {
-	    	$(".changeSrc").attr("src", "./images/background.jpg ");
-	    }
-	}
-    
-	
+	// Navbar: class Active and hr element
     function switchActive() {
 		$(".nav > li > a").click(function() {
 			$(this).parent().addClass('active')
@@ -26,11 +14,42 @@ $(document).ready(function(){
 		});
 	}
 
+    //Change header img src when screen < 480px
+    $(window).resize(changeSrc()); 
+	$(window).bind( 'orientationchange', changeSrc);
+	function changeSrc() {
+		if (screen.width < 480) {
+	    	$(".changeSrc").attr("src", "./images/background2.jpg");
+	    } else {
+	    	$(".changeSrc").attr("src", "./images/background.jpg ");
+	    }
+	}    
+
 	//Form Validation
+	jQuery.validator.addMethod("lettersonly", function(value, element) {
+  		return this.optional(element) || /^[a-z]+$/i.test(value);
+	}, "Letters only please");
+	jQuery.validator.addMethod("noSpace", function(value, element) { 
+		return value.indexOf(" ") < 0 && value != " "; 
+	}, "Too many spaces please enter some text!");
+
+	$("#message").keypress(function() {
+		textValue = $.trim(this.value);
+		if (textValue.length < 1) {
+			$("#message").rules("add", {
+				noSpace: true
+			});
+		} else {
+			$("#message").rules("remove", "noSpace");
+		}
+	});
+
     $('#form').validate({
 	    rules: {
-	        name1: {
-	            minlength: 2,
+	        name: {
+	            minlength: 3,
+	            maxlength: 100,
+	            lettersonly: true,
 	            required: true
 	        },
 	        email: {
@@ -41,7 +60,8 @@ $(document).ready(function(){
 	        	required: true
 	        },
 	        message: {
-	            minlength: 2,
+	            minlength: 10, 
+				maxlength: 500,
 	            required: true
 	        }
 	    },
@@ -49,11 +69,9 @@ $(document).ready(function(){
 	        $(element).closest('.form-control').removeClass('success').addClass('error');
 	    },
 	    success: function (element) {
-	        element.text('OK!').addClass('valid')
+	        element.prepend().text('OK!').addClass('valid')
 	            .closest('.form-control').removeClass('error').addClass('success');
 	    }
 	});
-
-
-
 });
+

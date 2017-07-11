@@ -150,18 +150,21 @@ header > h2 {
 	}
 }
 /*Tablet styles*/
-@media (max-height: 768x) {
+@media (max-height: 768px) {
 	.nav  {
 		margin: 0;
-		padding: 0;
+		padding: 0;		
+		text-align: center;
 		background-color: rgba(0,0,0, 0.9);	
 	} 
 	.navbar-default .navbar-toggle:focus, 
 	.navbar-default .navbar-toggle:hover {
-		background-color: rgba(0,0,0, 0);
+		
+		background-color: rgba(0,0,0, 0.9);
 	}
 	li {
 		text-align: center;
+		background-color: rgba(0,0,0, 0.9);
 	}
 	.hrNav {
 		margin: 0;
@@ -250,14 +253,14 @@ header > h2 {
 		width: 100vw;
 	}  
 }
-@media  screen and (max-width: 375px) {
+@media  (max-width: 375px) {
 	.headerBtn {
 		width: 120px;
 		height: 49px;
 		margin: 5% 10px 0% 10px;
 	}	
 }
-@media  screen and (max-width: 425px) {
+@media  (max-width: 425px) {
 	.t-recs { 
 		position: absolute;
 		top: 35%;
@@ -281,7 +284,7 @@ header > h2 {
 		z-index: 0;
 	}
 }
-@media  screen and (max-width: 768px) {
+@media  (max-width: 768px) {
 	header > h1 { 
 		left: 5%;
 	}
@@ -294,22 +297,19 @@ header > h2 {
 		margin: 10% 10px 0% 10px;
 	}	
 }
-@media  screen and (max-height: 480px) {
+@media  (max-height: 480px) {
 	.headerBtn {
 		width: 120px;
 		height: 35px;
 		margin: 1% 10px 0% 10px;
 	}	
 }
-@media  screen and (max-height: 360px) {
+@media  (max-height: 360px) {
 	.headerBtn {
 		width: 120px;
 		height: 35px;
 		margin: 1% 10px 0 10px;
 	}	
-}
-@media  screen and (max-width: 768px) {
-	
 }
 @media  (min-width: 960px) {
 	.nav  {		
